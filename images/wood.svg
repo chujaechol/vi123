@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="��">
+  <defs>
+    <linearGradient id="wood" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c49a6c"/>
+      <stop offset="100%" stop-color="#a67c52"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="#5c4033"/>
+  <g fill="none" stroke="#8b5e3c" stroke-width="2" opacity="0.6">
+    <path d="M0 120 Q200 100 400 120 T800 120"/>
+    <path d="M0 220 Q200 200 400 220 T800 220"/>
+    <path d="M0 320 Q200 300 400 320 T800 320"/>
+    <path d="M0 420 Q200 400 400 420 T800 420"/>
+  </g>
+  <rect x="100" y="100" width="600" height="360" fill="url(#wood)" rx="6"/>
+  <text x="400" y="520" text-anchor="middle" font-family="sans-serif" font-size="42" fill="#f0dcc4" font-weight="700">��</text>
+</svg>

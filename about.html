@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="건축자재 포털 소개 - 건축 프로젝트를 위한 자재 정보 플랫폼">
+  <title>소개 | 건축자재 포털</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-brand" href="index.html">
+        <span class="site-brand__logo" aria-hidden="true">▣</span>
+        <span class="site-brand__text">
+          <strong>건축자재 포털</strong>
+          <small>Architectural Materials</small>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="siteNav" aria-label="메뉴 열기">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="siteNav">
+        <a class="site-nav__link" href="index.html">홈</a>
+        <a class="site-nav__link" href="catalog.html">자재 카탈로그</a>
+        <a class="site-nav__link is-active" href="about.html">소개</a>
+        <a class="site-nav__link site-nav__link--cta" href="contact.html">문의하기</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <div class="page-header">
+      <h1>서비스 소개</h1>
+      <p>건축자재 포털은 설계·시공 현장에서 필요한 자재 정보를 한곳에서 제공합니다.</p>
+    </div>
+
+    <section class="about-intro">
+      <div class="about-intro__text">
+        <h2>건축자재 선택, 더 쉽게</h2>
+        <p>
+          건축 프로젝트마다 요구되는 자재는 다양합니다. 구조용 콘크리트와 철근,
+          외벽 단열재, 마감용 타일과 석재까지 — 각 자재의 특성과 적용 분야를
+          이해하는 것은 품질과 비용 모두에 영향을 미칩니다.
+        </p>
+        <p>
+          건축자재 포털은 주요 건축자재를 카테고리별로 정리하고, 용도·특성·태그
+          기반 검색을 통해 빠르게 정보를 찾을 수 있도록 돕습니다.
+        </p>
+      </div>
+      <div class="about-intro__visual">
+        <img src="images/steel.svg" alt="철강 자재">
+        <img src="images/wood.svg" alt="목재">
+        <img src="images/stone.svg" alt="석재">
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="section__head">
+        <h2>다루는 자재 분야</h2>
+      </div>
+      <ul class="about-list" id="aboutCategoryList"></ul>
+    </section>
+
+    <section class="section">
+      <div class="section__head">
+        <h2>이용 방법</h2>
+      </div>
+      <ol class="steps">
+        <li class="step">
+          <span class="step__num">1</span>
+          <div>
+            <h3>카탈로그 탐색</h3>
+            <p>자재 카탈로그에서 카테고리 필터 또는 검색으로 원하는 자재를 찾습니다.</p>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step__num">2</span>
+          <div>
+            <h3>상세 정보 확인</h3>
+            <p>카드를 클릭하면 용도, 특성, 관련 태그 등 상세 정보를 확인할 수 있습니다.</p>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step__num">3</span>
+          <div>
+            <h3>문의 및 상담</h3>
+            <p>프로젝트에 맞는 자재 선정이 필요하면 문의 페이지를 통해 상담을 요청하세요.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__brand">
+        <strong>건축자재 포털</strong>
+        <p>건축 프로젝트를 위한 자재 정보 플랫폼</p>
+      </div>
+      <nav class="site-footer__nav">
+        <a href="catalog.html">카탈로그</a>
+        <a href="about.html">소개</a>
+        <a href="contact.html">문의</a>
+      </nav>
+      <p class="site-footer__copy">&copy; 2026 건축자재 포털. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="materials.js"></script>
+  <script src="about.js"></script>
+  <script src="nav.js"></script>
+</body>
+</html>

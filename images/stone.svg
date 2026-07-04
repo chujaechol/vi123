@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="�">
+  <defs>
+    <linearGradient id="stone" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9a9590"/>
+      <stop offset="100%" stop-color="#6e6964"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="#3a3835"/>
+  <polygon points="120,480 280,180 440,480" fill="url(#stone)" opacity="0.9"/>
+  <polygon points="320,480 480,200 640,480" fill="url(#stone)" opacity="0.75"/>
+  <circle cx="220" cy="320" r="8" fill="#555" opacity="0.5"/>
+  <circle cx="380" cy="360" r="6" fill="#555" opacity="0.5"/>
+  <circle cx="520" cy="300" r="10" fill="#555" opacity="0.5"/>
+  <text x="400" y="540" text-anchor="middle" font-family="sans-serif" font-size="42" fill="#d8d4d0" font-weight="700">�</text>
+</svg>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="건축자재 포털 문의 - 자재 상담 및 견적 요청">
+  <title>문의하기 | 건축자재 포털</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-brand" href="index.html">
+        <span class="site-brand__logo" aria-hidden="true">▣</span>
+        <span class="site-brand__text">
+          <strong>건축자재 포털</strong>
+          <small>Architectural Materials</small>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="siteNav" aria-label="메뉴 열기">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="siteNav">
+        <a class="site-nav__link" href="index.html">홈</a>
+        <a class="site-nav__link" href="catalog.html">자재 카탈로그</a>
+        <a class="site-nav__link" href="about.html">소개</a>
+        <a class="site-nav__link site-nav__link--cta is-active" href="contact.html">문의하기</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <div class="page-header">
+      <h1>문의하기</h1>
+      <p>프로젝트 자재 선정, 견적, 기술 상담을 요청해 주세요.</p>
+    </div>
+
+    <div class="contact-layout">
+      <section class="contact-info">
+        <h2>연락처 정보</h2>
+        <dl class="contact-details">
+          <div>
+            <dt>이메일</dt>
+            <dd><a href="mailto:info@archmaterials.kr">info@archmaterials.kr</a></dd>
+          </div>
+          <div>
+            <dt>전화</dt>
+            <dd><a href="tel:0212345678">02-1234-5678</a></dd>
+          </div>
+          <div>
+            <dt>운영 시간</dt>
+            <dd>평일 09:00 – 18:00</dd>
+          </div>
+          <div>
+            <dt>주소</dt>
+            <dd>서울특별시 강남구 테헤란로 123<br>건축자재 빌딩 5층</dd>
+          </div>
+        </dl>
+        <div class="contact-note">
+          <p>긴급 현장 문의는 전화로 연락해 주시면 더 빠르게 안내해 드립니다.</p>
+        </div>
+      </section>
+
+      <section class="contact-form-wrap">
+        <h2>상담 요청</h2>
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">이름 <span class="required">*</span></label>
+            <input type="text" id="name" name="name" required placeholder="홍길동">
+          </div>
+          <div class="form-group">
+            <label for="email">이메일 <span class="required">*</span></label>
+            <input type="email" id="email" name="email" required placeholder="example@email.com">
+          </div>
+          <div class="form-group">
+            <label for="company">회사 / 소속</label>
+            <input type="text" id="company" name="company" placeholder="(주)건축설계">
+          </div>
+          <div class="form-group">
+            <label for="category">관심 자재 분야</label>
+            <select id="category" name="category">
+              <option value="">선택해 주세요</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">문의 내용 <span class="required">*</span></label>
+            <textarea id="message" name="message" rows="5" required placeholder="프로젝트 규모, 필요 자재, 문의 사항을 입력해 주세요."></textarea>
+          </div>
+          <button class="btn btn--primary btn--full" type="submit">문의 보내기</button>
+          <p class="form-success" id="formSuccess" hidden>문의가 접수되었습니다. 빠른 시일 내에 연락드리겠습니다.</p>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__brand">
+        <strong>건축자재 포털</strong>
+        <p>건축 프로젝트를 위한 자재 정보 플랫폼</p>
+      </div>
+      <nav class="site-footer__nav">
+        <a href="catalog.html">카탈로그</a>
+        <a href="about.html">소개</a>
+        <a href="contact.html">문의</a>
+      </nav>
+      <p class="site-footer__copy">&copy; 2026 건축자재 포털. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="materials.js"></script>
+  <script src="contact.js"></script>
+  <script src="nav.js"></script>
+</body>
+</html>
