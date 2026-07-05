@@ -66,6 +66,16 @@
   }
 
   function openPanel() {
+    const imagePanel = document.getElementById("imagebotPanel");
+    const imageToggle = document.getElementById("imagebotToggle");
+    if (imagePanel && !imagePanel.hidden) {
+      imagePanel.hidden = true;
+      if (imageToggle) {
+        imageToggle.setAttribute("aria-expanded", "false");
+        imageToggle.classList.remove("is-hidden");
+      }
+    }
+
     isOpen = true;
     panel.hidden = false;
     toggleBtn.setAttribute("aria-expanded", "true");
@@ -105,6 +115,11 @@
           materialsContext: buildMaterialsContext(),
         }),
       });
+
+      const contentType = response.headers.get("content-type") || "";
+      if (!contentType.includes("application/json")) {
+        throw new Error("서버 응답 형식이 올바르지 않습니다. server.py로 실행했는지 확인해 주세요.");
+      }
 
       const data = await response.json();
       typing.remove();
