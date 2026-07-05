@@ -105,9 +105,9 @@
           <p>콘크리트, 철강, 단열재 등 10개 카테고리로 체계적으로 정리되어 있습니다.</p>
         </article>
         <article class="feature-card">
-          <span class="feature-card__icon">📋</span>
-          <h3>상세 정보</h3>
-          <p>용도, 특성, 적용 분야를 한눈에 확인하고 프로젝트에 바로 활용하세요.</p>
+          <span class="feature-card__icon">💬</span>
+          <h3>AI 자재 상담</h3>
+          <p>우측 하단 챗봇으로 프로젝트에 맞는 자재 추천과 용도 설명을 받아보세요.</p>
         </article>
       </div>
     </section>
@@ -136,8 +136,53 @@
     </div>
   </footer>
 
+  <!-- AI 챗봇 -->
+  <div class="chatbot" id="chatbotWidget">
+    <button
+      class="chatbot__toggle"
+      id="chatbotToggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="chatbotPanel"
+      aria-label="AI 자재 상담 열기"
+    >
+      <span class="chatbot__toggle-icon" aria-hidden="true">💬</span>
+      <span class="chatbot__toggle-label">AI 상담</span>
+    </button>
+
+    <div class="chatbot__panel" id="chatbotPanel" hidden role="dialog" aria-labelledby="chatbotTitle">
+      <header class="chatbot__header">
+        <div>
+          <h2 class="chatbot__title" id="chatbotTitle">AI 자재 상담</h2>
+          <p class="chatbot__subtitle">GPT 기반 건축자재 도우미</p>
+        </div>
+        <button class="chatbot__close" id="chatbotClose" type="button" aria-label="챗봇 닫기">&times;</button>
+      </header>
+
+      <div class="chatbot__messages" id="chatbotMessages" aria-live="polite"></div>
+      <p class="chatbot__status" id="chatbotStatus" aria-live="polite"></p>
+
+      <form class="chatbot__form" id="chatbotForm">
+        <label class="visually-hidden" for="chatbotInput">메시지 입력</label>
+        <textarea
+          id="chatbotInput"
+          rows="1"
+          placeholder="예: 외벽 단열재 추천해 주세요"
+          autocomplete="off"
+        ></textarea>
+        <button class="chatbot__send" id="chatbotSend" type="submit" aria-label="메시지 보내기">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M22 2L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </div>
+
   <script src="materials.js"></script>
   <script src="home.js"></script>
   <script src="nav.js"></script>
+  <script src="chatbot.js"></script>
 </body>
 </html>

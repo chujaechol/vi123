@@ -1,18 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="�|">
-  <rect width="800" height="600" fill="#ece8e2"/>
-  <g>
-    <rect x="80" y="80" width="150" height="150" fill="#f5f2ee" stroke="#c8c0b8"/>
-    <rect x="240" y="80" width="150" height="150" fill="#ebe5de" stroke="#c8c0b8"/>
-    <rect x="400" y="80" width="150" height="150" fill="#f5f2ee" stroke="#c8c0b8"/>
-    <rect x="560" y="80" width="150" height="150" fill="#ebe5de" stroke="#c8c0b8"/>
-    <rect x="80" y="240" width="150" height="150" fill="#ebe5de" stroke="#c8c0b8"/>
-    <rect x="240" y="240" width="150" height="150" fill="#f5f2ee" stroke="#c8c0b8"/>
-    <rect x="400" y="240" width="150" height="150" fill="#ebe5de" stroke="#c8c0b8"/>
-    <rect x="560" y="240" width="150" height="150" fill="#f5f2ee" stroke="#c8c0b8"/>
-    <rect x="80" y="400" width="150" height="150" fill="#f5f2ee" stroke="#c8c0b8"/>
-    <rect x="240" y="400" width="150" height="150" fill="#ebe5de" stroke="#c8c0b8"/>
-    <rect x="400" y="400" width="150" height="150" fill="#f5f2ee" stroke="#c8c0b8"/>
-    <rect x="560" y="400" width="150" height="150" fill="#ebe5de" stroke="#c8c0b8"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="타일">
+  <rect width="800" height="600" fill="#e8e4df"/>
+  <g fill="#c8c2ba" stroke="#9a948c" stroke-width="2">
+    <rect x="80" y="80" width="160" height="160"/>
+    <rect x="240" y="80" width="160" height="160"/>
+    <rect x="400" y="80" width="160" height="160"/>
+    <rect x="560" y="80" width="160" height="160"/>
+    <rect x="160" y="240" width="160" height="160"/>
+    <rect x="320" y="240" width="160" height="160"/>
+    <rect x="480" y="240" width="160" height="160"/>
   </g>
-  <text x="400" y="575" text-anchor="middle" font-family="sans-serif" font-size="42" fill="#6b6560" font-weight="700">�|</text>
+  <text x="400" y="520" text-anchor="middle" font-family="sans-serif" font-size="42" fill="#6b6560" font-weight="700">타일</text>
 </svg>

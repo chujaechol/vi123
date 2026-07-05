@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자재전시관 | 대구 프리미엄 인테리어 자재 쇼룸</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a id="top" class="page-top" tabindex="-1" aria-hidden="true"></a>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="header">
+    <nav class="nav">
+      <a href="#top" class="logo">
+        <span class="logo-icon">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+            <path d="M11 1L20 6.5V15.5L11 21L2 15.5V6.5L11 1Z" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M11 7L15 9.5V14.5L11 17L7 14.5V9.5L11 7Z" fill="currentColor"/>
+          </svg>
+        </span>
+        <span class="logo-text">자재전시관</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about" data-section="about">소개</a></li>
+        <li><a href="#gallery" data-section="gallery">전시</a></li>
+        <li><a href="#categories" data-section="categories">카테고리</a></li>
+      </ul>
+      <a href="#directions" class="nav-cta">찾아오시는길</a>
+      <button class="nav-toggle" id="navToggle" aria-label="메뉴 열기">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-bg">
+        <div class="hero-orb hero-orb-1"></div>
+        <div class="hero-orb hero-orb-2"></div>
+        <div class="hero-grid"></div>
+      </div>
+
+      <div class="hero-swatches" aria-hidden="true">
+        <div class="swatch swatch-1"><div class="swatch-inner pattern-marble"></div></div>
+        <div class="swatch swatch-2"><div class="swatch-inner pattern-wood"></div></div>
+        <div class="swatch swatch-3"><div class="swatch-inner pattern-tile"></div></div>
+        <div class="swatch swatch-4"><div class="swatch-inner preview-stone-granite"></div></div>
+      </div>
+
+      <div class="hero-content">
+        <p class="hero-label reveal">Daegu Premium Material Showroom</p>
+        <h1 class="reveal reveal-delay-1">공간의 품격을 완성하는<br><em>프리미엄 자재</em> 전문 쇼룸</h1>
+        <p class="hero-desc reveal reveal-delay-2">대구 북구에 위치한 자재전시관에서 타일, 목재, 바닥재, 석재 등 200여 종의 실물 샘플을 직접 비교하고 전문가 상담을 받아보세요.</p>
+        <div class="hero-actions reveal reveal-delay-3">
+          <a href="#gallery" class="btn btn-primary">
+            전시 둘러보기
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a href="#directions" class="btn btn-outline">찾아오시는길</a>
+        </div>
+      </div>
+
+      <div class="hero-stats reveal reveal-delay-4">
+        <div class="stat">
+          <strong data-count="200">0</strong>
+          <span>자재 종류</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <strong data-count="12">0</strong>
+          <span>전시 존</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <strong data-count="50">0</strong>
+          <span>브랜드</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text reveal-left">
+            <span class="section-label">About Showroom</span>
+            <h2>직접 보고, 만지고,<br>선택하는 공간</h2>
+            <p>자재전시관은 인테리어 마감재를 실물로 체험하고 비교할 수 있는 대구 지역 전문 쇼룸입니다. 현장 시공 경험을 바탕으로 한 맞춤 상담으로 최적의 자재를 제안합니다.</p>
+            <ul class="about-features">
+              <li>
+                <span class="feature-icon">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M7 10l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <div>
+                  <strong>실물 샘플 전시</strong>
+                  <p>대형 패널과 실제 규격 샘플로 현장감 있게 비교</p>
+                </div>
+              </li>
+              <li>
+                <span class="feature-icon">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M7 10l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <div>
+                  <strong>전문 상담</strong>
+                  <p>공간별·용도별 최적 자재 추천 및 시공 안내</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="about-visual reveal-right">
+            <div class="about-card card-1">
+              <div class="card-pattern pattern-marble"></div>
+              <div class="card-overlay"></div>
+              <span>대리석 · 석재</span>
+            </div>
+            <div class="about-card card-2">
+              <div class="card-pattern pattern-wood"></div>
+              <div class="card-overlay"></div>
+              <span>원목 · 합판</span>
+            </div>
+            <div class="about-card card-3">
+              <div class="card-pattern pattern-tile"></div>
+              <div class="card-overlay"></div>
+              <span>세라믹 · 타일</span>
+            </div>
+            <div class="about-badge">
+              <span class="badge-num">15+</span>
+              <span class="badge-text">년 경력<br>전문 상담</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="categories" id="categories">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Categories</span>
+          <h2>자재 카테고리</h2>
+          <p class="section-desc">관심 카테고리를 선택하면 전시 자재를 바로 필터링합니다.</p>
+        </div>
+        <div class="category-grid reveal">
+          <button class="category-card active" data-category="all">
+            <span class="cat-icon">◎</span>
+            <span class="cat-name">전체</span>
+            <span class="cat-count">24</span>
+          </button>
+          <button class="category-card" data-category="tile">
+            <span class="cat-icon">▦</span>
+            <span class="cat-name">타일</span>
+            <span class="cat-count">6</span>
+          </button>
+          <button class="category-card" data-category="wood">
+            <span class="cat-icon">▤</span>
+            <span class="cat-name">목재</span>
+            <span class="cat-count">5</span>
+          </button>
+          <button class="category-card" data-category="floor">
+            <span class="cat-icon">▧</span>
+            <span class="cat-name">바닥재</span>
+            <span class="cat-count">4</span>
+          </button>
+          <button class="category-card" data-category="wall">
+            <span class="cat-icon">▥</span>
+            <span class="cat-name">벽지·도장</span>
+            <span class="cat-count">4</span>
+          </button>
+          <button class="category-card" data-category="stone">
+            <span class="cat-icon">◆</span>
+            <span class="cat-name">석재</span>
+            <span class="cat-count">5</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Gallery</span>
+          <h2>전시 자재</h2>
+          <p class="section-desc">카드를 클릭하면 상세 정보를 확인할 수 있습니다.</p>
+        </div>
+        <div class="gallery-toolbar reveal">
+          <p class="gallery-count" id="galleryCount">총 <strong>24</strong>개 자재</p>
+          <div class="gallery-search">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <circle cx="7" cy="7" r="5" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M11 11l3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            <input type="search" id="searchInput" placeholder="자재명 검색..." aria-label="자재 검색">
+          </div>
+        </div>
+        <div class="gallery-grid" id="galleryGrid"></div>
+        <p class="gallery-empty" id="galleryEmpty" hidden>검색 결과가 없습니다.</p>
+      </div>
+    </section>
+
+    <section class="zones">
+      <div class="container">
+        <div class="section-header light reveal">
+          <span class="section-label">Showroom Zones</span>
+          <h2>전시 존 안내</h2>
+          <p class="section-desc light">실제 공간 규모로 연출된 4개의 테마 존을 둘러보세요.</p>
+        </div>
+        <div class="zones-grid">
+          <article class="zone-card reveal" style="--delay: 0">
+            <div class="zone-number">01</div>
+            <h3>리빙룸 존</h3>
+            <p>거실 바닥재, 벽 마감, 천장재를 실제 공간 규모로 연출</p>
+            <span class="zone-arrow">→</span>
+          </article>
+          <article class="zone-card reveal" style="--delay: 1">
+            <div class="zone-number">02</div>
+            <h3>주방·욕실 존</h3>
+            <p>타일, 싱크대, 조명까지 완성된 키친·욕실 mock-up</p>
+            <span class="zone-arrow">→</span>
+          </article>
+          <article class="zone-card reveal" style="--delay: 2">
+            <div class="zone-number">03</div>
+            <h3>침실·드레스룸</h3>
+            <p>원목 마감, 벽지, 바닥 조합을 다양하게 전시</p>
+            <span class="zone-arrow">→</span>
+          </article>
+          <article class="zone-card reveal" style="--delay: 3">
+            <div class="zone-number">04</div>
+            <h3>샘플 라이브러리</h3>
+            <p>소형 샘플 보드로 200종 이상 빠르게 비교</p>
+            <span class="zone-arrow">→</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="directions" id="directions">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Location</span>
+          <h2>찾아오시는길</h2>
+          <p class="section-desc">대구광역시 북구 동변로 75 · 네비게이션 검색으로 편리하게 방문하실 수 있습니다.</p>
+        </div>
+        <div class="directions-grid">
+          <div class="map-card reveal-left">
+            <div class="map-placeholder">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+              <span class="map-address">대구광역시 북구 동변로 75</span>
+              <p class="map-sub">자재전시관</p>
+              <a href="https://map.naver.com/v5/search/%EB%8C%80%EA%B5%AC%20%EB%B6%81%EA%B5%AC%20%EB%8F%99%EB%B3%80%EB%A1%9C%2075" target="_blank" rel="noopener noreferrer" class="map-link">네이버 지도에서 보기 →</a>
+            </div>
+          </div>
+          <div class="directions-info reveal-right">
+            <div class="info-list">
+              <div class="info-item">
+                <span class="info-icon">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 1C5.7 1 3 3.7 3 7c0 4.5 6 10 6 10s6-5.5 6-10c0-3.3-2.7-6-6-6z" stroke="currentColor" stroke-width="1.5"/><circle cx="9" cy="7" r="2" stroke="currentColor" stroke-width="1.5"/></svg>
+                </span>
+                <div>
+                  <span class="info-label">주소</span>
+                  <span>대구광역시 북구 동변로 75</span>
+                </div>
+              </div>
+              <div class="info-item">
+                <span class="info-icon">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="7" stroke="currentColor" stroke-width="1.5"/><path d="M9 5v4l3 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                </span>
+                <div>
+                  <span class="info-label">운영시간</span>
+                  <span>평일 10:00 – 19:00 · 토요일 10:00 – 17:00 · 일·공휴일 휴무</span>
+                </div>
+              </div>
+              <div class="info-item">
+                <span class="info-icon">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 4h12v10H3z" stroke="currentColor" stroke-width="1.5"/><path d="M3 6l6 4 6-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                </span>
+                <div>
+                  <span class="info-label">전화</span>
+                  <span>053-321-5678</span>
+                </div>
+              </div>
+            </div>
+            <div class="directions-tips">
+              <h3>방문 안내</h3>
+              <ul>
+                <li>네비게이션 검색: <strong>대구 북구 동변로 75</strong></li>
+                <li>대중교통 이용 시 동변로 일대에서 하차 후 도보 이용</li>
+                <li>방문 전 전화 예약 시 원활한 상담이 가능합니다</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info reveal-left">
+            <span class="section-label">Contact</span>
+            <h2>방문 상담 예약</h2>
+            <p>아래 양식으로 예약해 주시면 전문 상담사가 자재 선정부터 시공까지 안내해 드립니다.</p>
+            <ul class="contact-highlights">
+              <li>실물 샘플 기반 1:1 맞춤 상담</li>
+              <li>공간별·예산별 자재 추천</li>
+              <li>시공 파트너 연결 및 견적 안내</li>
+            </ul>
+          </div>
+          <form class="contact-form reveal-right" id="contactForm">
+            <div class="form-row">
+              <label>
+                <span>이름</span>
+                <input type="text" name="name" required placeholder="홍길동">
+              </label>
+              <label>
+                <span>연락처</span>
+                <input type="tel" name="phone" required placeholder="010-0000-0000">
+              </label>
+            </div>
+            <label>
+              <span>희망 방문일</span>
+              <input type="date" name="date" required>
+            </label>
+            <label>
+              <span>관심 자재</span>
+              <select name="interest">
+                <option value="">선택해 주세요</option>
+                <option value="tile">타일</option>
+                <option value="wood">목재</option>
+                <option value="floor">바닥재</option>
+                <option value="wall">벽지·도장</option>
+                <option value="stone">석재</option>
+                <option value="all">전체 둘러보기</option>
+              </select>
+            </label>
+            <label>
+              <span>문의 내용</span>
+              <textarea name="message" rows="4" placeholder="공사 예정일, 관심 스타일 등을 적어 주세요."></textarea>
+            </label>
+            <button type="submit" class="btn btn-primary btn-full">예약 신청</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <p class="footer-logo">◈ 자재전시관</p>
+        <p class="footer-tagline">대구 프리미엄 인테리어 자재 전문 쇼룸</p>
+        <p class="footer-address">대구광역시 북구 동변로 75 · 053-321-5678</p>
+      </div>
+      <div class="footer-links">
+        <a href="#about">소개</a>
+        <a href="#gallery">전시</a>
+        <a href="#directions">찾아오시는길</a>
+        <a href="#contact">상담 예약</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 자재전시관. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="닫기">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 4l10 10M14 4L4 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </button>
+      <div class="modal-preview" id="modalPreview"></div>
+      <div class="modal-body">
+        <span class="modal-category" id="modalCategory"></span>
+        <h3 id="modalTitle"></h3>
+        <p id="modalDesc"></p>
+        <dl class="modal-specs" id="modalSpecs"></dl>
+        <a href="#contact" class="btn btn-primary btn-full modal-cta" id="modalCta">이 자재 상담하기</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <!-- AI 챗봇 -->
+  <div class="chatbot" id="chatbotWidget">
+    <button
+      class="chatbot__toggle"
+      id="chatbotToggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="chatbotPanel"
+      aria-label="AI 자재 상담 열기"
+    >
+      <span class="chatbot__toggle-icon" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+          <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <span class="chatbot__toggle-label">AI 상담</span>
+    </button>
+
+    <div class="chatbot__panel" id="chatbotPanel" hidden role="dialog" aria-labelledby="chatbotTitle">
+      <header class="chatbot__header">
+        <div>
+          <h2 class="chatbot__title" id="chatbotTitle">AI 자재 상담</h2>
+          <p class="chatbot__subtitle">GPT 기반 · 자재전시관 도우미</p>
+        </div>
+        <button class="chatbot__close" id="chatbotClose" type="button" aria-label="챗봇 닫기">&times;</button>
+      </header>
+
+      <div class="chatbot__messages" id="chatbotMessages" aria-live="polite"></div>
+      <p class="chatbot__status" id="chatbotStatus" aria-live="polite"></p>
+
+      <form class="chatbot__form" id="chatbotForm">
+        <label class="visually-hidden" for="chatbotInput">메시지 입력</label>
+        <textarea
+          id="chatbotInput"
+          rows="1"
+          placeholder="예: 거실 바닥재 추천해 주세요"
+          autocomplete="off"
+        ></textarea>
+        <button class="chatbot__send" id="chatbotSend" type="submit" aria-label="메시지 보내기">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M22 2L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="chatbot.js"></script>
+</body>
+</html>

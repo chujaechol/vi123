@@ -1,17 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Xl��">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="콘크리트">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#d8d4cf"/>
       <stop offset="100%" stop-color="#b8b2aa"/>
     </linearGradient>
-    <pattern id="grain" width="40" height="40" patternUnits="userSpaceOnUse">
-      <circle cx="8" cy="12" r="1.2" fill="#a39d95" opacity="0.5"/>
-      <circle cx="28" cy="8" r="0.8" fill="#9a948c" opacity="0.4"/>
-      <circle cx="18" cy="30" r="1" fill="#8f8981" opacity="0.35"/>
-    </pattern>
   </defs>
   <rect width="800" height="600" fill="url(#bg)"/>
-  <rect width="800" height="600" fill="url(#grain)"/>
   <rect x="80" y="120" width="640" height="360" rx="8" fill="#c8c2ba" stroke="#9a948c" stroke-width="3"/>
-  <text x="400" y="520" text-anchor="middle" font-family="sans-serif" font-size="42" fill="#5c5650" font-weight="700">Xl��</text>
+  <text x="400" y="520" text-anchor="middle" font-family="sans-serif" font-size="42" fill="#5c5650" font-weight="700">콘크리트</text>
 </svg>

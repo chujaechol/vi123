@@ -25,13 +25,15 @@ function renderFilters() {
   ).join("");
 }
 
-categoryFilters.addEventListener("click", (event) => {
-  const button = event.target.closest("[data-category]");
-  if (!button) return;
-  activeCategory = button.dataset.category;
-  renderFilters();
-  renderGallery();
-});
+if (categoryFilters) {
+  categoryFilters.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-category]");
+    if (!button) return;
+    activeCategory = button.dataset.category;
+    renderFilters();
+    renderGallery();
+  });
+}
 
 function matchesQuery(item, query) {
   if (!query) return true;
@@ -95,12 +97,20 @@ function renderGallery() {
   });
 }
 
-lightbox.querySelector(".lightbox__close").addEventListener("click", () => lightbox.close());
-lightbox.addEventListener("click", (event) => {
-  if (event.target === lightbox) lightbox.close();
+if (lightbox) {
+  lightbox.querySelector(".lightbox__close")?.addEventListener("click", () => lightbox.close());
+  lightbox.addEventListener("click", (event) => {
+    if (event.target === lightbox) lightbox.close();
+  });
+  lightbox.addEventListener("cancel", (event) => event.preventDefault());
+}
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && lightbox?.open) lightbox.close();
 });
 
-searchInput.addEventListener("input", renderGallery);
-
-renderFilters();
-renderGallery();
+if (searchInput) searchInput.addEventListener("input", renderGallery);
+if (categoryFilters && gallery) {
+  renderFilters();
+  renderGallery();
+}
